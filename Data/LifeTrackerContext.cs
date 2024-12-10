@@ -10,7 +10,9 @@ public class LifeTrackerContext : DbContext
         : base(options)
     {
     }
+    public DbSet<User> User => Set<User>();
 
-    public DbSet<Questionaire> Questionaire => Set<Questionaire>();
-    public DbSet<QuestionaireTemplate> QuestionaireTemplate => Set<QuestionaireTemplate>();
+    public DbSet<Template> Template => Set<Template>();
+
+    public DbSet<Submission> Submission => Set<Submission>();
 }
